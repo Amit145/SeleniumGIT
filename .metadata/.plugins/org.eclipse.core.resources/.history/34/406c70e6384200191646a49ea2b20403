@@ -1,0 +1,32 @@
+package seleniumTesting;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class verifyTitle {
+	
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");  //Set Property to Chrome Driver
+		
+		WebDriver webdriver = new ChromeDriver();   //Create a object of chrome using WebDriver Class
+		
+		webdriver.get("https://www.facebook.com"); 	//Navigation URL of a website
+		
+		webdriver.manage().window().maximize();    //Maximize browser Window   
+		
+		String webTitle = webdriver.getTitle();	   //Get URL Title
+		
+		System.out.println("Title of url : "+webTitle);
+		
+		/*
+		 * Exception in thread "main" java.lang.IllegalStateException: 
+		 * The path to the driver executable must be set by the webdriver.chrome.driver system property; 
+		 * for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. 
+		 * The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html 
+		 * 
+		 * download and paste in project
+		 */
+	}
+
+}

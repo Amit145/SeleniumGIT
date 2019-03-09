@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+	checkout([$class: 'GitSCM', branches: [[name: '*/MavenSeleniumTestNG']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Amit145/SeleniumGIT.git']]])
+}
+

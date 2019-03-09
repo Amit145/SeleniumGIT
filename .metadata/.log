@@ -357,3 +357,14 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !ENTRY org.eclipse.core.net 4 0 2019-03-09 15:50:09.621
 !MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The handle is invalid.
 ' #6.
+
+!ENTRY org.eclipse.ui.ide 4 4 2019-03-09 15:58:21.358
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2019-03-09 15:58:21.360
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-03-09 15:58:21.360
+!MESSAGE The project description file (.project) for 'MavenDemo' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-03-09 15:58:22.892
+!MESSAGE The workspace will exit with unsaved changes in this session.

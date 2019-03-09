@@ -1,0 +1,32 @@
+package testNG;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class annotationTestNG {
+	
+  /*
+   * Annotations:
+   * 
+   * 1.) BeforeMethod - executes once before each TestCase
+   */
+ 
+  @BeforeMethod
+  public void initializeWebDriver() {
+	  
+	  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");  //Set Property to Chrome Driver
+		
+		WebDriver webdriver = new ChromeDriver();   //Create a object of chrome using WebDriver Class
+		
+		webdriver.get("https://www.facebook.com"); 	//Navigation URL of a website
+		
+		webdriver.manage().window().maximize();    //Maximize browser Window 
+  }
+  
+  
+  @Test
+  public void f() {
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WebDriver">
+	<test name="TestNG Testing"
+		<classes>
+			<class name="testNG.annotationExecutionTestNG"</class>
+			<class name="testNG.adSensePingTestNG"</class>
+		</classes>
+	</test>
+</suite>

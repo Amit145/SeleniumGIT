@@ -1,0 +1,14 @@
+package testNG;
+
+import org.testng.annotations.Test;
+
+public class demoTestNG {
+	
+	/* TestNG doesn't have main Method instead it has Anotations
+	 * 
+	 */
+	
+  @Test
+  public void verifyTitle() {
+  }
+}

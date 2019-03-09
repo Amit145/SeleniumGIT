@@ -1,0 +1,16 @@
+package seleniumTesting;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class verifyTitle {
+	
+	public static void main(String[] args) {
+		
+		WebDriver webdriver = new ChromeDriver();   //create a object of chrome using WebDriver Class
+		
+		webdriver.get("https://www.edureka.co"); 						// get URL of a website
+		
+	}
+
+}
