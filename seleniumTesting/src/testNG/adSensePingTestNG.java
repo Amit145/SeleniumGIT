@@ -7,7 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class annotationExecutionTestNG {
+public class adSensePingTestNG {
 	
 	/*
 	 * Class to execute TestCases using Annotation BeforeClass, Test & AfterClass
@@ -43,7 +43,7 @@ public class annotationExecutionTestNG {
 		
 	  	webdriver = new ChromeDriver();   //Create a object of chrome using WebDriver Class
 		
-		webdriver.get("https://www.facebook.com"); 	//Navigation URL of a website
+		webdriver.get("https://www.google.com/intl/en_in/adsense/start/"); 	//Navigation URL of a website
 		
 		webdriver.manage().window().maximize();    //Maximize browser Window 
   }
@@ -62,7 +62,7 @@ public class annotationExecutionTestNG {
 	  
 	  String currentWebSiteURL = webdriver.getCurrentUrl(); //Get Current URL
 		
-	  String expectedWebSiteURL = "https://www.facebook.com";   //Expected URL
+	  String expectedWebSiteURL = "https://www.google.com/intl/en_in/adsense/start/";   //Expected URL
 		
 	  Assert.assertEquals(currentWebSiteURL, expectedWebSiteURL);   //Assert class to validate output
 	  	  
